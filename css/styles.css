@@ -1,0 +1,79 @@
+/* Base Styles ------------ */
+body {
+    margin: 0;
+    font-family: 'Turret Road', cursive;
+    background: url(../img/bg.png);
+}
+
+/* Class Styles ----------- */
+.intro {
+    width: 100%;
+    height: 200px;
+    padding-top: 25px;
+}
+
+.intro img {
+    display: block;
+    width: 15%;
+    margin: auto;
+}
+
+.landingpage {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
+                url('../img/ss.jpg');
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.landingpage p {
+    display: inline;
+    color: white;
+    margin: 0 70px;
+    /* border-left: solid white 2px;
+    border-right: solid white 2px; */
+    padding: 8px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 5px #fdb954;
+}
+
+.landingpage img {
+    border-bottom: 10px solid #fdb954;
+    /* border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+    display: block;
+    width: 65%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.landingpage img:hover {
+    transition: all .5s;
+    transform: scale(1.02);
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    height: 700px;
+    /* overflow: auto; */
+}
+
+.container iframe {
+    margin: 20px;
+}
+
+.contact {
+    height: 300px;
+    padding-top: 100px;
+}
+
+/* ID Styles -------- */
+#whitebackground {
+    background-color: white;
+}
