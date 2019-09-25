@@ -31,6 +31,12 @@ h3 {
     height: 800px;
     padding-top: 25px;
     text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 
 .landingpage p {
@@ -40,7 +46,7 @@ h3 {
     /* border-left: solid white 2px;
     border-right: solid white 2px; */
     padding: 8px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-shadow: 2px 2px 20px white;
@@ -54,7 +60,6 @@ h3 {
     width: 65%;
     margin: auto;
     margin-top: 50px;
-    border: 2px solid white;
 }
 
 .landingpage img:hover {
@@ -67,11 +72,13 @@ h3 {
     margin: auto;
     width: 60%;
     height: 700px;
-    /* overflow: auto; */
+    overflow: auto;
 }
 
 .container iframe {
+    display: block;     
     margin: 20px;
+    width: 80%;
 }
 
 .contact {
@@ -79,7 +86,52 @@ h3 {
     padding-top: 100px;
 }
 
+.spotify {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
+                url('../img/ss2.jpg');
+    background-attachment: fixed;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.spotify iframe {
+    display: block;
+    margin: auto;
+}
+
 /* ID Styles -------- */
 #whitebackground {
     background-color: white;
+}
+
+/* Fade In Keyframes --- */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
