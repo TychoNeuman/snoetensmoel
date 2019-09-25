@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: 'Turret Road', cursive;
     background: url(../img/bg.png);
+    box-sizing: border-box;
 }
 
 h3 {
@@ -10,10 +11,19 @@ h3 {
     letter-spacing: 5px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #fdb954;
+}
+
 /* Class Styles ----------- */
 .intro {
     width: 100%;
-    height: 160px;
+    height: 20%;
     padding-top: 17px;
 }
 
@@ -28,7 +38,7 @@ h3 {
                 url('../img/ss.jpg');
     background-attachment: fixed;
     width: 100%;
-    height: 800px;
+    height: 100%;
     padding-top: 25px;
     text-align: center;
 
@@ -39,12 +49,10 @@ h3 {
             animation: fadein 2s;
 }
 
-.landingpage p {
+.landingpage h3 {
     display: inline;
     color: white;
     margin: 0 70px;
-    /* border-left: solid white 2px;
-    border-right: solid white 2px; */
     padding: 8px;
     font-size: 1.3em;
     text-transform: uppercase;
@@ -53,9 +61,6 @@ h3 {
 }
 
 .landingpage img {
-    /* border-bottom: 10px solid #fdb954; */
-    /* border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px; */
     display: block;
     width: 65%;
     margin: auto;
@@ -70,34 +75,58 @@ h3 {
 .container {
     text-align: center;
     margin: auto;
-    width: 60%;
-    height: 700px;
-    overflow: auto;
+    width: 100%;
+    /* overflow: auto; */
 }
 
-.container iframe {
-    display: block;     
-    margin: 20px;
-    width: 80%;
+.workedwith {
+    background: white;
+    height: 70px;
+    padding-top: 10px;
 }
 
-.contact {
-    height: 300px;
-    padding-top: 100px;
+.workedwith p {
+    font-size: 1.1em;
+}
+
+.workedwith span {
+    font-weight: bold;
 }
 
 .spotify {
+    height: 70%;
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
                 url('../img/ss2.jpg');
     background-attachment: fixed;
-    padding: 50px;
     color: white;
     text-align: center;
+    padding: 33px;
 }
 
 .spotify iframe {
     display: block;
     margin: auto;
+}
+
+.container iframe {
+    display: block;     
+    margin: 25px auto;
+}
+
+.contact {
+    height: 200px;
+    width: 60%;
+    margin: auto;
+}
+
+.footer {
+    width: 100%;
+    background-color: white;
+}
+
+.footer i {
+    font-size: 2em;
+    margin: 20px;
 }
 
 /* ID Styles -------- */
