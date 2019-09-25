@@ -78,7 +78,6 @@ a:hover {
     text-align: center;
     margin: auto;
     width: 100%;
-    /* overflow: auto; */
 }
 
 .workedwith {
@@ -93,6 +92,10 @@ a:hover {
 
 .workedwith span {
     font-weight: bold;
+}
+
+.workedwith span:nth-of-type(2n) {
+    color: #fdb954;
 }
 
 .spotify {
@@ -119,6 +122,10 @@ a:hover {
     height: 170px;
     width: 60%;
     margin: auto;
+}
+
+.contact span {
+    color: #fdb954;
 }
 
 .footer {
@@ -170,3 +177,5 @@ a:hover {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+/* Media Queries */
