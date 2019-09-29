@@ -110,7 +110,12 @@ a:hover {
     background-attachment: fixed;
     color: white;
     text-align: center;
-    padding: 33px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+.spotify h3 {
+    margin-bottom: 15px;
 }
 
 .spotify iframe {
@@ -147,6 +152,34 @@ a:hover {
     font-size: small;
 }
 
+/* Clear Fix */
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .landingpage h3 {
+        font-size: .9em;
+    }
+    .workedwith p {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 512px) {
+    .landingpage h3 {
+        font-size: .7em;
+        letter-spacing: 3px;
+    }
+    .workedwith p {
+        font-size: .5em;
+    }
+}
+
 /* Fade In Keyframes --- */
 
 @keyframes fadein {
@@ -176,13 +209,4 @@ a:hover {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
-
-/* Media Queries */
-
-/* Clear Fix */
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
 }
